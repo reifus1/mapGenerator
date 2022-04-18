@@ -1,14 +1,15 @@
 const express = require('express');
 const router = express.Router();
+const User = require('../models/user');
 
 // Getting all
 router.get('/', (req, res) => {
-    res.send('Hello');
+    res.send('All users');
 });
 
 // Geting one
 router.get('/:id', (req, res) => {
-    res.send(req.params.id);
+    res.send(`User id: ${req.params.id}`);
 });
 
 // Creating one

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const subscriberSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     id: {
         type: Schema.Types.ObjectId
     },
@@ -31,4 +31,4 @@ const subscriberSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Subscriber', subscriberSchema);
+module.exports = mongoose.model('User', userSchema);
