@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
+const autoIncrement = require('mongoose-auto-increment');
 
 const userSchema = new mongoose.Schema({
-    id: {
-        type: Schema.Types.ObjectId
+    uid: {
+        type: Number,
     },
     email: {
         type: String,
@@ -14,21 +15,24 @@ const userSchema = new mongoose.Schema({
     },
     isActive: {
         type: Boolean,
-        required: true,
         default: 1,
     },
     loginCount: {
-        type: Decimal,
+        type: Number,
         default: 0
     },
     created: {
         type: Date,
-        required: true,
         default: Date.now
     },
     updated: {
         type: Date,
+        default: Date.now
     }
 });
+
+autoIncrement.initialize(mongoose.connection);
+
+userSchema.plugin(autoIncrement.plugin, 'Book');
 
 module.exports = mongoose.model('User', userSchema);

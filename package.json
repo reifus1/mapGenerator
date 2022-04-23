@@ -18,7 +18,8 @@
   "homepage": "https://github.com/reifus1/mapGenerator#readme",
   "dependencies": {
     "express": "^4.17.3",
-    "mongoose": "^6.3.0"
+    "mongoose": "^6.3.0",
+    "mongoose-auto-increment": "^5.0.1"
   },
   "devDependencies": {
     "dotenv": "^16.0.0",
