@@ -2,7 +2,7 @@ GET http://localhost:3000/users/
 
 ###
 
-GET http://localhost:3000/users/15
+GET http://localhost:3000/users/1
 
 ###
 
@@ -12,4 +12,17 @@ Content-Type: application/json
 {
     "email": "rafa@gmail.com",
     "name": "Rafa"
+}
+
+###
+
+DELETE http://localhost:3000/users/6
+
+###
+
+PATCH http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+    "name": "Rafaello"
 }
