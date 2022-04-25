@@ -33,6 +33,6 @@ const userSchema = new mongoose.Schema({
 
 autoIncrement.initialize(mongoose.connection);
 
-userSchema.plugin(autoIncrement.plugin, 'Book');
+userSchema.plugin(autoIncrement.plugin, 'User');
 
 module.exports = mongoose.model('User', userSchema);

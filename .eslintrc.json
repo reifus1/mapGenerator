@@ -1,0 +1,20 @@
+{
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "jquery": true
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "globals": {
+        "app": true,
+        "_": true,
+        "window": true
+      },
+    "rules": {
+        "no-console": 0
+    }
+}
