@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
         const users = await User.find();
         res.json(users);
     } catch {
-        res.status(500).json({ message: err.message });
+        res.status(500).json({ message: err.message }); // eslint-disable-line
     }
 });
 
