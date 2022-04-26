@@ -4,7 +4,8 @@
   "description": "Table Plan Generator",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "ui": "browser-sync start --config bs-config.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "pug": "^3.0.2"
   },
   "devDependencies": {
+    "browser-sync": "^2.27.9",
     "dotenv": "^16.0.0",
     "eslint": "^8.14.0",
     "nodemon": "^2.0.15"
